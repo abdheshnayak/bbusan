@@ -1,0 +1,16 @@
+---
+application:
+  name: "bbusan"
+  project: "Test"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "Testdisk"
+    size: "20"
+    type: "fast_ssd"
+    mount_point: "/mnt/testdisk"
+routers:
+- name: "main-bbusan"
+  routes:
+  - application_name: "bbusan"
+    paths:
+    - "/*"
